@@ -4,7 +4,7 @@
 mod file;
 mod config;
 
-use file as file_handler;
+use file::{self as file_handler, get_photo_dir};
 use screenshots::Screen;
 // use tauri::{window, Window};
 use std::fs;
@@ -56,11 +56,10 @@ async fn open_overlay(app_handle: tauri::AppHandle) {
 #[tauri::command]
 fn get_photos() -> Vec<String>{
     let mut photos: Vec<String> = vec![];
-    let pathname = "/home/funky/Pictures/Phoenix/";
+    let pathname = get_photo_dir();
     let test = fs::read_dir(pathname).unwrap();
     for path in test {
         let brah = String::from(path.unwrap().path().to_str().unwrap());
-        println!("{}", brah);
         photos.insert(photos.len(), brah);
     }
     photos

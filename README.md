@@ -1,7 +1,22 @@
-# Tauri + Svelte + Typescript
+# Phoenix
+A screenshot application that works on both linux and windows.
 
-This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
 
-## Recommended IDE Setup
+## Goals
+- ✅ Be able to take screenshots
+- ✅ Work on linux
+- ✅ Work on Windows
+- ✅ Area screenshot
+- 🚧 Keybinds
+- 🚧 See past screenshots
+- ❌ Upload photo
+- ❌ Support multiple moniters
+- ❌ Have functional settings
+- ❌ Store more info about photo in a database
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+
+## Stack
+For this im using
+- Tauri
+- Svelte
+- Tailwind
